@@ -1,7 +1,7 @@
 'use strict';
 const correctMessage = '🎉 Correct Number!';
 const tooHighMessage = '📈 Too High';
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 30) + 1;
 const correctBackgroundColor = '#60b347';
 const correctStyleWidth = '30rem';
 let score = parseInt(document.querySelector('.score').textContent);
@@ -41,7 +41,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 document.querySelector('.again').addEventListener('click', function () {
-  secretNumber = Math.trunc(Math.random() * 21);
+  secretNumber = Math.trunc(Math.random() * 30) + 1;
   console.log(secretNumber);
   score = parseInt(document.querySelector('.score').textContent);
   document.querySelector('body').style.backgroundColor = '#222';
